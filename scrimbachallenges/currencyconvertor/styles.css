@@ -4,12 +4,13 @@ body {
   margin: 0;
   padding: 0;
 }
+h1{
+  color:#293A52;
+  
+}
 
 body {
 	text-align: center;
-	background-color: #0cbaba;
-	background-color: #2a2a72;
-	background-color: #537895;
 	background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
 	font-family: "Roboto", sans-serif;
 	color: whitesmoke;
