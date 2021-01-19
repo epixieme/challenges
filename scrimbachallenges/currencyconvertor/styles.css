@@ -1,47 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 html,
 body {
   margin: 0;
   padding: 0;
 }
-h1{
-  color:#293A52;
-  
-}
 
 body {
-	text-align: center;
-	background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
-	font-family: "Roboto", sans-serif;
-	color: whitesmoke;
+  text-align: center;
+  background-image: url("https://assets.codepen.io/3383494/money.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+
 }
 
-.main {
+.main{
+  height:100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center; 
+  background-image: linear-gradient(315deg, #323232 0%, #09203f 74% ); 
+ opacity: 0.9;
+   background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.outerContainer {
+  min-width:40vw;
   display: grid;
   justify-content: center;
   align-items: center;
-  background: rgba(245, 245, 245, 0.4);
-  margin: 25px;
-  box-shadow: 1px 2px 1px #dbe1e5;
-  border-radius: 20px 20px 0 0;
+  background: rgb(51, 174, 222,0.1);
+  padding: 20px;
+  border-radius: 20px;
+  border:1px solid rgb(51, 174, 222,1);
+
+  
 }
-.container {
+.innerContainer {
   display: grid;
-  grid-template-columns: 100px 100px;
+  grid-template-columns: repeat(2, 100px);
   justify-content: center;
   align-items: center;
   grid-gap: 10px;
-}
-
-.alignbtn {
-  margin: 50px;
-  display: grid;
-  justify-content: flex-end;
-  align-items: center;
+    
 }
 
 input {
-  display: flex;
+  display: grid;
   padding: 10px;
   text-align: center;
   border: #0b4287;
@@ -57,31 +64,16 @@ select {
   cursor: pointer;
 }
 #original-currency-amount{
-	cursor: pointer;	
+  cursor: pointer;  
 }
 
 input:focus {
   outline: 0;
 }
 
-button {
-  padding: 15px;
-  border-radius: 0 10px 0 10px;
-  background-color: #fcb813;
-  font-size: 20px;
-  color: #0b4287;
-  width: 50px;
-  justify-content: center;
-  align-items: center;
-  border: #fcb813;
-}
 
-select:focus,button:focus {
+select:focus{
   outline: none;
 }
 
-.alignbtn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+

@@ -1,15 +1,16 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
   <div class="main">
+  <div class="outerContainer">
     <h1>International Currency Converter</h1>
-    <h2 class="exchangeRateText">Exchange Rate</h2>
+    <h3 class="exchangeRateText"></h3>
 
-    <div class="container">
+    <div class="innerContainer">
 
       <input type="number" id="original-currency-amount" placeholder="1" min="1" oninput="validity.valid||(value='')"></input>
       
@@ -33,8 +34,9 @@
     </p>
 
   </div>
+  </div>
 
-  <script src="currconvert.js"></script>
+  <script src="index.pack.js"></script>
 </body>
 
 </html>
